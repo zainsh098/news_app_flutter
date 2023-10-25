@@ -14,6 +14,7 @@ class SecureStorage1{
  async {
 
     await storage.writeSecureData(key, value);
+    print('writing')  ;
 
 
   }
@@ -22,6 +23,7 @@ class SecureStorage1{
   async{
     String value=await storage.readSecureData(key)?? "No Data Found";
     return value;
+
 
 
 
